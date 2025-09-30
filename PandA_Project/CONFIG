@@ -1,0 +1,47 @@
+# Example configuration file for building PandA firmware, and for simulation
+#
+# Copy this file to a file named CONFIG and edit as appropriate.  Lines that are
+# commented out can be left as they are, the default value is shown.  Uncommented
+# lines must be assigned values.
+
+# Default build location.  Default is to build in build subdirectory.
+BUILD_DIR = /home/buchholn/PandABuild_1.0
+
+# Development Tool Version
+# VIVADO_VER = 2023.2
+
+# Definitions needed for FPGA build
+export VIVADO = /tools/Xilinx/Vivado/2023.2/settings64.sh
+# Path to external IP repository (if required)
+export EXT_IP_REPO = 
+
+
+# Specifiy licence server, if required
+# export LM_LICENSE_FILE =
+
+# Location of rootfs builder.  This needs to be at least version 1.13 and can be
+# downloaded from https://github.com/araneidae/rootfs
+export ROOTFS_TOP = /home/buchholn/rootfs
+
+# Where to find source files
+export TAR_FILES = /tar-files
+
+# Path to root filesystem
+# WORK_DIR can be ignored for local builds, explicitly set in CI 
+PANDA_ROOTFS = /home/buchholn/PandABlocks-rootfs
+MAKE_ZPKG = /home/buchholn/PandABlocks-rootfs/make-zpkg
+
+# Python interpreter for running scripts
+#
+# PYTHON = python3
+
+# Sphinx build for documentation.
+# SPHINX_BUILD = sphinx-build
+
+# List of default targets to build when running make
+# DEFAULT_TARGETS = zpkg
+
+# FPGA Application Name
+APP_NAME = PandABox-fmc_acq430
+
+# vim: set filetype=make:
