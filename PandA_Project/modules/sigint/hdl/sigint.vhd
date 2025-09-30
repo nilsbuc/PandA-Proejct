@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity integr is
+entity sigint is
   port (
     -- Clock
     clk_i               : in std_logic;
@@ -14,9 +14,9 @@ entity integr is
     --Parameters
     enable               :in std_logic
   );
-  end integr;
+  end sigint;
 
-  architecture rtl of integr is
+  architecture rtl of sigint is
 
     signal inpa_reg     : std_logic_vector(31 downto 0);
     signal integ        : std_logic_vector(31 downto 0);
