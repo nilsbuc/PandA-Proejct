@@ -1,0 +1,11 @@
+[.]
+description: Simple Threshold Block
+entity: threshhold
+
+[INPA]
+type: pos_mux
+description: input signal
+
+[OUTA]
+type: pos_out
+description: signal after threshold
