@@ -10,9 +10,9 @@ entity threshh is
     --  Block Inputs and Outputs
     inpa_i      : in std_logic_vector(31 downto 0);
     outa_o      : out std_logic_vector(31 downto 0);
-    thresh_VAL  : in std_logic_vector(31 downto 0)
 
-    --  Parameters
+    --  Parameter
+    thresh_VAL  : in std_logic_vector(31 downto 0)
 
   );
   end threshh;
