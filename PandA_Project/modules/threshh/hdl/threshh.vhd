@@ -12,7 +12,7 @@ entity threshh is
     outa_o      : out std_logic_vector(31 downto 0);
 
     --  Parameter
-    thresh_VAL  : in std_logic_vector(31 downto 0)
+    threshVAL_i  : in std_logic_vector(31 downto 0)
 
   );
   end threshh;
@@ -26,7 +26,7 @@ entity threshh is
       process(clk_i)
         begin
 
-          if inpa_i >= thresh_VAL then               --to_integer(unsigned(inpa_i))
+          if inpa_i >= threshVAL_i then               --to_integer(unsigned(inpa_i))
             outa_o <= inpa_i;
           else
             outa_o <= X"00000000";
