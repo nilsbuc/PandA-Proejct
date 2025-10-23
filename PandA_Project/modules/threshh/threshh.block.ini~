@@ -1,0 +1,15 @@
+[.]
+description: Simple Threshold Block
+entity: threshhold
+
+[INPA]
+type: pos_mux
+description: input signal
+
+[thresh_VAL]
+type: param int
+description: Threshold value
+
+[OUTA]
+type: pos_out
+description: signal after threshold
